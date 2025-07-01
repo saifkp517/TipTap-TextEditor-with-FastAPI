@@ -1,4 +1,3 @@
-Sure! Here's the **copy-paste-friendly markdown** version of your updated `README.md`:
 
 ---
 
