@@ -1,0 +1,13 @@
+# Python environment
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+
+# Firebase credentials
+firebasePrivateKey.json
+
+# Logs
+*.log
