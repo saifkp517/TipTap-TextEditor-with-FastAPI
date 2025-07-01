@@ -1,3 +1,8 @@
+Sure! Here's the **copy-paste-friendly markdown** version of your updated `README.md`:
+
+---
+
+```markdown
 # ✍️ Tiptap + FastAPI Autocomplete Editor
 
 A simple demo project implementing:
@@ -21,13 +26,13 @@ A simple demo project implementing:
 
 ## 🛠 Setup Instructions
 
-### 🖥 Client (Next.js + Tiptap)
+### 🖥 Frontend (Next.js + Tiptap)
 
 1. Go to your Firebase Console → **Project Settings** → **General**
 2. Scroll down to **Your Apps > Firebase SDK snippet**
 3. Copy the config and create this file:
 
-#### `lib/firebase.js`
+#### `frontend/lib/firebase.js`
 
 ```js
 import { initializeApp } from "firebase/app";
@@ -49,23 +54,24 @@ export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider();
 ```
 
-4. In your frontend project root:
+4. From the `frontend/` directory:
 
 ```bash
+cd frontend
 npm install
 npm run dev
 ```
 
 ---
 
-### 🐍 Server (FastAPI)
+### 🐍 Backend (FastAPI)
 
 1. In Firebase Console → **Project Settings > Service accounts**
 2. Click **Generate new private key**
-3. Save it to:  
-   `editor/backend/firebasePrivateKey.json`
+3. Save it to:
+   `backend/firebasePrivateKey.json`
 
-4. From the `editor/backend` folder:
+4. From the `backend/` folder:
 
 ```bash
 pip install -r requirements.txt
@@ -108,7 +114,6 @@ Response:
 
 [Demo Video](https://www.loom.com/share/05abcd156da140d6b875e4709a554c12?sid=b2df68bc-184a-4316-bb82-437b51a030dc)
 
-
 ---
 
 ## 📁 Folder Structure
@@ -121,17 +126,20 @@ project-root/
 │   ├── dummy_data.py
 │   ├── firebasePrivateKey.json
 │   └── requirements.txt
-├── lib/
-│   └── firebase.js           ← Firebase client SDK config
-├── app/
-│   ├── context/AuthContext.tsx
-│   ├── page.tsx              ← Editor page
-├── public/
-├── styles/
-├── package.json
+├── frontend/                 ← Next.js + Tiptap editor
+│   ├── app/
+│   ├── components/
+│   ├── lib/
+│   ├── public/
+│   ├── styles/
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── ...
 └── README.md
 ```
 
 ---
 
 I didn’t implement SQL DB since it was optional, but would definitely add it if required.
+```
+
