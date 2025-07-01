@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///D:/editor/app/page.tsx"],"sourcesContent":["'use client'\n\nimport Tiptap from \"../components/TipTap\";\n\nexport default function Home() {\n  \n  return (\n    <div className=\"bg-white\">\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;;AAIe,SAAS;IAEtB,qBACE,8OAAC;QAAI,WAAU;;;;;;AAGnB","debugId":null}}]
+}
